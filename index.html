@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satnam Singh | Indian Air Force Veteran | Flight Gunner | Technology Enthusiast</title>
+  <meta name="description" content="Official personal portfolio of Satnam Singh, an Indian Air Force veteran with 20 years of experience as a Flight Gunner, helicopter training, instructor experience, drone technology training and interests in AI, IoT and cybersecurity.">
+  <meta name="keywords" content="Satnam Singh, Indian Air Force, Flight Gunner, Mi-17, Drone Technology, AI, IoT, Cybersecurity, Portfolio">
+  <meta name="author" content="Satnam Singh">
+  <link rel="canonical" href="https://satnamsingh.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Satnam Singh | Indian Air Force Veteran | Flight Gunner | Technology Enthusiast">
+  <meta property="og:description" content="Portfolio of Satnam Singh — 20 years of Indian Air Force service, helicopter operations, drone technology, and a passion for AI, IoT and cybersecurity.">
+  <meta property="og:url" content="https://satnamsingh.dev/">
+  <meta property="og:image" content="assets/images/satnam-singh.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Satnam Singh | IAF Veteran | Flight Gunner">
+  <meta name="twitter:description" content="20 years of disciplined aviation service, now exploring the future of technology.">
+  <meta name="twitter:image" content="assets/images/satnam-singh.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Satnam Singh",
+    "jobTitle": "Indian Air Force Veteran, Flight Gunner",
+    "email": "satnamsaini767@gmail.com",
+    "telephone": "+918812005232",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nalagarh",
+      "addressRegion": "Himachal Pradesh",
+      "addressCountry": "IN"
+    },
+    "knowsAbout": ["Aviation", "Helicopter Operations", "Drone Technology", "Artificial Intelligence", "Internet of Things", "Cybersecurity"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Graduate in Mathematics (Honours)"
+    }
+  }
+  </script>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tailwind CSS (preflight disabled to avoid Bootstrap conflicts) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { corePlugins: { preflight: false } }
+  </script>
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <span class="brand-name">Satnam Singh</span>
+        <span class="brand-sub">Veteran &bull; Flight Gunner &bull; Technology Enthusiast</span>
+      </a>
+      <button class="navbar-toggler" type="button" id="navToggler" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+        <span class="toggler-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3" role="menubar">
+          <li class="nav-item" role="none"><a class="nav-link active" href="#home" role="menuitem">Home</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#about" role="menuitem">About</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#experience" role="menuitem">Experience</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#training" role="menuitem">Training</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#skills" role="menuitem">Skills</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#journey" role="menuitem">Journey</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#projects" role="menuitem">Projects</a></li>
+          <li class="nav-item" role="none"><a class="nav-link" href="#contact" role="menuitem">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#" class="btn-resume" id="downloadResume" title="Resume will be available soon">
+            <i class="fas fa-download"></i> <span class="d-none d-md-inline">Resume</span>
+          </a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" type="button">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="grid-overlay"></div>
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    </div>
+    <div class="container hero-content">
+      <div class="row align-items-center min-vh-100">
+        <!-- Left: Text -->
+        <div class="col-lg-7 hero-text" data-reveal="left">
+          <div class="hero-badge">
+            <i class="fas fa-shield-halved"></i>
+            Indian Air Force Veteran &bull; Flight Gunner
+          </div>
+          <h1 class="hero-greeting">Hi, I'm <span class="hero-name">Satnam Singh</span></h1>
+          <p class="hero-title">20 Years of Service, Discipline &amp; Aviation Experience — Now Exploring the Future of Technology</p>
+          <p class="hero-desc">An experienced Indian Air Force Flight Gunner with two decades of service spanning helicopter operations, instructor responsibilities, and drone technology training — now channeling that discipline into AI, IoT, and cybersecurity.</p>
+          <div class="hero-actions">
+            <a href="#journey" class="btn-primary-custom">
+              <i class="fas fa-route"></i> Explore My Journey
+            </a>
+            <a href="#contact" class="btn-outline-custom">
+              <i class="fas fa-envelope"></i> Contact Me
+            </a>
+          </div>
+        </div>
+        <!-- Right: Profile Image -->
+        <div class="col-lg-5 hero-image-col" data-reveal="right">
+          <div class="profile-showcase">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <div class="profile-ring" aria-hidden="true"></div>
+            <div class="profile-container">
+              <img
+                src="assets/images/satnam-singh.png"
+                alt="Satnam Singh – Indian Air Force Veteran and Flight Gunner"
+                class="profile-img"
+                width="340"
+                height="340"
+                loading="eager"
+              >
+            </div>
+            <!-- Floating Badges -->
+            <div class="float-badge float-badge-1" aria-hidden="true">
+              <i class="fas fa-medal"></i> 20+ Years Service
+            </div>
+            <div class="float-badge float-badge-2" aria-hidden="true">
+              <i class="fas fa-crosshairs"></i> Flight Gunner
+            </div>
+            <div class="float-badge float-badge-3" aria-hidden="true">
+              <i class="fas fa-helicopter"></i> Mi-17 / Mi-17 V5
+            </div>
+            <div class="float-badge float-badge-4" aria-hidden="true">
+              <i class="fas fa-satellite"></i> Drone Technology
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">About Satnam Singh</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6" data-reveal="left">
+          <div class="about-text">
+            <p>I am a <strong>graduate in Mathematics (Honours)</strong> who dedicated <strong>20 years of service</strong> to the Indian Air Force as a <strong>Flight Gunner</strong>. My career spanned diverse posting locations across India, providing extensive exposure to varied operational environments and demanding conditions.</p>
+            <p>During my service, I gained hands-on training and operational experience with <strong>Mi-17, Mi-17 V5, and IV Helicopters</strong>. I had the privilege of serving as a <strong>Gunner Instructor at Yelahanka</strong>, where I trained and mentored personnel, sharing operational knowledge and upholding professional standards.</p>
+            <p>I also served <strong>3 years at BRD</strong>, contributing to the broader organisational mission. My pursuit of learning led me to complete a <strong>Drone/Quadcopter course from IIT Ropar</strong>, bridging my aviation background with emerging technology.</p>
+            <p>Today, I am actively exploring <strong>Artificial Intelligence, Internet of Things (IoT), and Cybersecurity</strong> — channeling the discipline, precision, and adaptability cultivated over two decades of military service into the technology domain.</p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-reveal="right">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number"><span class="counter" data-target="20">0</span><span class="stat-suffix">+</span></div>
+              <div class="stat-label">Years of Service</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number"><span class="counter" data-target="3">0</span><span class="stat-suffix"> Yrs</span></div>
+              <div class="stat-label">BRD Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number stat-text">Mi-17 / V5</div>
+              <div class="stat-label">Helicopter Experience</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number stat-text">IIT Ropar</div>
+              <div class="stat-label">Drone Training</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Military &amp; Professional Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <!-- Experience 1: IAF -->
+        <div class="timeline-item" data-reveal="left">
+          <div class="timeline-dot">
+            <i class="fas fa-jet-fighter"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-org">Indian Air Force</span>
+            <h3 class="timeline-role">Flight Gunner</h3>
+            <span class="timeline-duration">20 Years of Service</span>
+            <p>Served extensively in aviation environments operating alongside aircrew in helicopter missions. Developed deep expertise in operational discipline, situational awareness, technical systems, and mission readiness. Worked under demanding conditions across multiple posting locations, cultivating resilience, teamwork, and precise decision-making capabilities essential to flight operations.</p>
+            <div class="timeline-tags">
+              <span class="t-tag">Aviation Operations</span>
+              <span class="t-tag">Teamwork</span>
+              <span class="t-tag">Situational Awareness</span>
+              <span class="t-tag">Operational Discipline</span>
+            </div>
+          </div>
+        </div>
+        <!-- Experience 2: Instructor -->
+        <div class="timeline-item" data-reveal="right">
+          <div class="timeline-dot">
+            <i class="fas fa-chalkboard-user"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-org">Gunner Instructor — Yelahanka</span>
+            <h3 class="timeline-role">Instructor</h3>
+            <span class="timeline-duration">Training &amp; Mentoring Role</span>
+            <p>Responsible for training and mentoring personnel in gunnery systems and operational procedures. Developed training methodologies, maintained professional standards, and ensured trainees acquired the technical competence and discipline required for operational readiness. Shared practical knowledge gained from extensive field experience.</p>
+            <div class="timeline-tags">
+              <span class="t-tag">Instruction</span>
+              <span class="t-tag">Mentoring</span>
+              <span class="t-tag">Standards</span>
+              <span class="t-tag">Knowledge Transfer</span>
+            </div>
+          </div>
+        </div>
+        <!-- Experience 3: BRD -->
+        <div class="timeline-item" data-reveal="left">
+          <div class="timeline-dot">
+            <i class="fas fa-building-columns"></i>
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-org">BRD</span>
+            <h3 class="timeline-role">3 Years of Service</h3>
+            <span class="timeline-duration">Organisational Contribution</span>
+            <p>Contributed to the broader institutional mission during a three-year tenure at BRD. Applied the same discipline, technical aptitude, and commitment to excellence that defined the earlier years of service, supporting organisational objectives in a different capacity.</p>
+            <div class="timeline-tags">
+              <span class="t-tag">Institutional Role</span>
+              <span class="t-tag">Technical Support</span>
+              <span class="t-tag">Discipline</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HELICOPTER SECTION ===== -->
+  <section class="section helicopter-section" id="helicopter">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Aviation</span>
+        <h2 class="section-title">Aviation &amp; Helicopter Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4" data-reveal="up" data-delay="0">
+          <div class="heli-card">
+            <div class="heli-radar" aria-hidden="true">
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-sweep"></div>
+            </div>
+            <div class="heli-designation">Mi-17</div>
+            <h3>Training &amp; Operational Experience</h3>
+            <p>Gained comprehensive training and hands-on experience with the Mi-17 helicopter platform, developing proficiency in systems, operations, and aircrew coordination within the IAF's operational framework.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-reveal="up" data-delay="150">
+          <div class="heli-card">
+            <div class="heli-radar" aria-hidden="true">
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-sweep"></div>
+            </div>
+            <div class="heli-designation">Mi-17 V5</div>
+            <h3>Advanced Variant Experience</h3>
+            <p>Trained and operated on the upgraded Mi-17 V5 variant, building on foundational Mi-17 knowledge to work with enhanced avionics, systems, and operational capabilities of this advanced platform.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-reveal="up" data-delay="300">
+          <div class="heli-card">
+            <div class="heli-radar" aria-hidden="true">
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-ring"></div>
+              <div class="radar-sweep"></div>
+            </div>
+            <div class="heli-designation">IV Helicopters</div>
+            <h3>Additional Platform Training</h3>
+            <p>Extended helicopter experience to include IV category helicopters, broadening operational versatility and deepening understanding of different rotary-wing platforms and their unique characteristics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINING SECTION ===== -->
+  <section class="section training-section" id="training">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Training &amp; Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="0">
+          <div class="training-card completed">
+            <div class="training-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="training-status">Completed</span>
+            <h3>Mathematics Honours</h3>
+            <p>Graduate degree in Mathematics (Honours), building a strong analytical and quantitative foundation.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="100">
+          <div class="training-card completed">
+            <div class="training-icon"><i class="fas fa-helicopter"></i></div>
+            <span class="training-status">Completed</span>
+            <h3>Helicopter Training</h3>
+            <p>Comprehensive training on Mi-17, Mi-17 V5, and IV Helicopters within the Indian Air Force.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="200">
+          <div class="training-card completed">
+            <div class="training-icon"><i class="fas fa-satellite-dish"></i></div>
+            <span class="training-status">Completed</span>
+            <h3>Drone Technology</h3>
+            <p>Quadcopter Drone Course completed from IIT Ropar, covering drone systems and operations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="300">
+          <div class="training-card learning">
+            <div class="training-icon"><i class="fas fa-microchip"></i></div>
+            <span class="training-status">Currently Learning</span>
+            <h3>Technology Fields</h3>
+            <p>Actively studying Artificial Intelligence, Internet of Things (IoT), and Cybersecurity principles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Capabilities</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+        <!-- Experienced -->
+        <div class="col-lg-4" data-reveal="up" data-delay="0">
+          <div class="skill-column">
+            <div class="skill-column-header experienced">
+              <i class="fas fa-star"></i>
+              <h3>Experienced</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span> Aviation Discipline</li>
+              <li><span class="skill-dot"></span> Teamwork &amp; Collaboration</li>
+              <li><span class="skill-dot"></span> Leadership</li>
+              <li><span class="skill-dot"></span> Training &amp; Instruction</li>
+              <li><span class="skill-dot"></span> Situational Awareness</li>
+              <li><span class="skill-dot"></span> Problem Solving</li>
+              <li><span class="skill-dot"></span> Safety Awareness</li>
+              <li><span class="skill-dot"></span> Operational Planning</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Trained -->
+        <div class="col-lg-4" data-reveal="up" data-delay="150">
+          <div class="skill-column">
+            <div class="skill-column-header trained">
+              <i class="fas fa-certificate"></i>
+              <h3>Trained</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span> Mi-17 Helicopter Systems</li>
+              <li><span class="skill-dot"></span> Mi-17 V5 Systems</li>
+              <li><span class="skill-dot"></span> IV Helicopter Operations</li>
+              <li><span class="skill-dot"></span> Quadcopter Drone Technology</li>
+              <li><span class="skill-dot"></span> Gunnery Systems</li>
+              <li><span class="skill-dot"></span> Instructional Methodology</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Currently Learning -->
+        <div class="col-lg-4" data-reveal="up" data-delay="300">
+          <div class="skill-column">
+            <div class="skill-column-header learning">
+              <i class="fas fa-book-open"></i>
+              <h3>Currently Learning</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span class="skill-dot"></span> Artificial Intelligence</li>
+              <li><span class="skill-dot"></span> Internet of Things (IoT)</li>
+              <li><span class="skill-dot"></span> Cybersecurity</li>
+              <li><span class="skill-dot"></span> Drone Technology (Advanced)</li>
+              <li><span class="skill-dot"></span> Web Technologies</li>
+              <li><span class="skill-dot"></span> Emerging Technologies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JOURNEY SECTION ===== -->
+  <section class="section journey-section" id="journey">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Across India</span>
+        <h2 class="section-title">A Journey Across India</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle" data-reveal="up">Two decades of service brought professional exposure to diverse geographies, climates, and operational environments — from the northeast to the northwest, from central India to the south.</p>
+      </div>
+      <div class="journey-track" data-reveal="up">
+        <div class="journey-line" aria-hidden="true"></div>
+        <div class="journey-locations">
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Assam</div>
+          </div>
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Chhattisgarh</div>
+          </div>
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Nagpur</div>
+          </div>
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Bidar</div>
+          </div>
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Chandigarh</div>
+          </div>
+          <div class="journey-point">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Phalodi</div>
+          </div>
+          <div class="journey-point active">
+            <div class="journey-dot"></div>
+            <div class="journey-label">Yelahanka</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS / TECHNOLOGY SECTION ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Looking Ahead</span>
+        <h2 class="section-title">Exploring the Future of Technology</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="0">
+          <div class="project-card">
+            <div class="project-status learning">Learning</div>
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <h3>Artificial Intelligence</h3>
+            <p>Exploring AI concepts, machine learning fundamentals, and practical applications that can bridge the gap between traditional operations and intelligent systems.</p>
+            <div class="project-placeholder">Project details coming soon</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="100">
+          <div class="project-card">
+            <div class="project-status exploring">Exploring</div>
+            <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+            <h3>Internet of Things</h3>
+            <p>Learning connected devices, sensor networks, automation frameworks, and IoT architectures that power smart systems and real-time data collection.</p>
+            <div class="project-placeholder">Project details coming soon</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="200">
+          <div class="project-card">
+            <div class="project-status learning">Learning</div>
+            <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+            <h3>Cybersecurity</h3>
+            <p>Developing knowledge of cybersecurity principles, threat landscapes, secure systems design, and digital protection strategies for modern infrastructure.</p>
+            <div class="project-placeholder">Project details coming soon</div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="300">
+          <div class="project-card">
+            <div class="project-status exploring">Exploring</div>
+            <div class="project-icon"><i class="fas fa-helicopter"></i></div>
+            <h3>Drone Technology</h3>
+            <p>Building upon quadcopter drone training from IIT Ropar and exploring modern UAV technologies, autonomous flight, and drone-based solutions.</p>
+            <div class="project-placeholder">Project details coming soon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES / EXPERTISE SECTION ===== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Services &amp; Areas of Value</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="0">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
+            <h3>Training &amp; Mentoring</h3>
+            <p>Leveraging instructor experience to deliver structured training, mentor emerging professionals, and build technical competence in teams.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="100">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-plane-up"></i></div>
+            <h3>Aviation Experience</h3>
+            <p>Two decades of hands-on helicopter operations, aircrew coordination, and aviation discipline applicable to aerospace and defence sectors.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="200">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-flask"></i></div>
+            <h3>Technical Learning &amp; Research</h3>
+            <p>A disciplined approach to self-directed learning in AI, IoT, and cybersecurity — applying military-grade focus to technology mastery.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="0">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-satellite"></i></div>
+            <h3>Drone Technology</h3>
+            <p>Certified drone/quadcopter training from IIT Ropar combined with aviation operational knowledge for UAV-related projects and consultations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="100">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Technology Awareness</h3>
+            <p>Bridging the gap between traditional operations and modern technology by understanding and articulating how emerging tech transforms industries.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="200">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-people-group"></i></div>
+            <h3>Discipline &amp; Team Leadership</h3>
+            <p>Leadership forged in high-stakes military environments — bringing reliability, accountability, and team cohesion to any professional setting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header" data-reveal="up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="row g-5">
+        <!-- Contact Info -->
+        <div class="col-lg-5" data-reveal="left">
+          <div class="contact-info">
+            <h3 class="contact-name">Satnam Singh</h3>
+            <p class="contact-tagline">Indian Air Force Veteran | Flight Gunner | Technology Enthusiast</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <span class="contact-item-label">Phone</span>
+                  <a href="tel:8812005232" class="contact-item-value">8812005232</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <a href="mailto:satnamsaini767@gmail.com" class="contact-item-value">satnamsaini767@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">Nalagarh, Solan, Himachal Pradesh, India</span>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-map-pin"></i></div>
+                <div>
+                  <span class="contact-item-label">Address</span>
+                  <span class="contact-item-value">Village Ratyour, P.O. Dabhota, Tehsil Nalagarh, District Solan, Himachal Pradesh – 174101</span>
+                </div>
+              </div>
+            </div>
+            <div class="contact-buttons">
+              <a href="tel:8812005232" class="btn-primary-custom">
+                <i class="fas fa-phone"></i> Call Me
+              </a>
+              <a href="mailto:satnamsaini767@gmail.com" class="btn-outline-custom">
+                <i class="fas fa-envelope"></i> Email Me
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- Contact Form -->
+        <div class="col-lg-7" data-reveal="right">
+          <div class="contact-form-wrapper">
+            <form id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="formName" class="form-label">Name <span class="required">*</span></label>
+                    <input type="text" class="form-input" id="formName" name="name" placeholder="Your full name" required minlength="2" autocomplete="name">
+                    <span class="form-error" id="nameError" role="alert"></span>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="formEmail" class="form-label">Email <span class="required">*</span></label>
+                    <input type="email" class="form-input" id="formEmail" name="email" placeholder="your.email@example.com" required autocomplete="email">
+                    <span class="form-error" id="emailError" role="alert"></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="formSubject" class="form-label">Subject <span class="required">*</span></label>
+                    <input type="text" class="form-input" id="formSubject" name="subject" placeholder="What is this regarding?" required>
+                    <span class="form-error" id="subjectError" role="alert"></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="formMessage" class="form-label">Message <span class="required">*</span></label>
+                    <textarea class="form-input form-textarea" id="formMessage" name="message" rows="5" placeholder="Your message..." required minlength="10"></textarea>
+                    <span class="form-error" id="messageError" role="alert"></span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-primary-custom btn-submit">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>
+              <i class="fas fa-circle-check"></i>
+              <h3>Message Received</h3>
+              <p>Thank you for reaching out. Since this is a frontend-only portfolio, please also email your message directly to <a href="mailto:satnamsaini767@gmail.com">satnamsaini767@gmail.com</a> for a guaranteed response.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <span class="footer-brand-name">Satnam Singh</span>
+            <p class="footer-brand-tagline">Indian Air Force Veteran | Flight Gunner | Technology Enthusiast</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <a href="tel:8812005232">8812005232</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:satnamsaini767@gmail.com">satnamsaini767@gmail.com</a></li>
+            <li><i class="fas fa-location-dot"></i> Nalagarh, Himachal Pradesh, India</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Satnam Singh. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" type="button">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Custom JS -->
+  <script src="js/script.js" defer></script>
+</body>
+</html>
